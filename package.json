@@ -19,6 +19,7 @@
   "homepage": "https://github.com/pgt2195/full-stack-open-part3-course-exercises#readme",
   "description": "",
   "dependencies": {
+    "cors": "^2.8.5",
     "express": "^5.1.0"
   }
 }
