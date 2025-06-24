@@ -1,0 +1,24 @@
+{
+  "name": "full-stack-open-part3-course-exercises",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "node --watch index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pgt2195/full-stack-open-part3-course-exercises.git"
+  },
+  "author": "Paul Grossetête",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pgt2195/full-stack-open-part3-course-exercises/issues"
+  },
+  "homepage": "https://github.com/pgt2195/full-stack-open-part3-course-exercises#readme",
+  "description": "",
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}

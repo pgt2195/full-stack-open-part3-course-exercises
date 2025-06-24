@@ -1,0 +1,9 @@
+POST http://localhost:3002/api/notes
+content-type: application/json
+
+{
+    "content": "Nouvelle Note faites avec request.rest"
+}
+
+###
+DELETE http://localhost:3002/api/notes/4
