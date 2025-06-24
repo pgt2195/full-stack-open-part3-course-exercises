@@ -27,6 +27,11 @@
       "id": "2db9",
       "content": "Nouvelle note 2",
       "important": true
+    },
+    {
+      "id": "0f8b",
+      "content": "Nouvelle note 4",
+      "important": true
     }
   ]
 }
