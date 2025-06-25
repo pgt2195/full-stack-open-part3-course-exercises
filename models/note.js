@@ -6,7 +6,8 @@ const url = process.env.MONGODB_URI
 // console.log(typeof url)
 // console.log(url)
 
-console.log('connecting to', url)
+// console.log('connecting to', url)
+console.log('connecting to MongoBD')
 mongoose.connect(url)
 
   .then(result => {

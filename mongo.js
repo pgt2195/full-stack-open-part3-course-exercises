@@ -20,19 +20,19 @@ const noteSchema = new mongoose.Schema({
 
 const Note = mongoose.model('Note', noteSchema)
 
-// const note = new Note({
-//   content: 'Toujours un test',
-//   important: true,
-// })
+const note = new Note({
+  content: 'Un test pour voir si tout est synchro sur render',
+  important: false,
+})
 
-// note.save().then(result => {
-//   console.log('note saved!')
-//   mongoose.connection.close()
-// })
-
-Note.find({}).then(result => {
-  result.forEach(note => {
-    console.log(note)
-  })
+note.save().then(result => {
+  console.log('note saved!')
   mongoose.connection.close()
 })
+
+// Note.find({}).then(result => {
+//   result.forEach(note => {
+//     console.log(note)
+//   })
+//   mongoose.connection.close()
+// })
