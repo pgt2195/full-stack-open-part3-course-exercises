@@ -1,4 +1,10 @@
-POST http://localhost:3002/api/notes
+GET http://localhost:3004/api/notes
+
+###
+GET http://localhost:3004/api/notes/685c4695e1a6235abbcd7de3
+
+###
+POST http://localhost:3004/api/notes
 content-type: application/json
 
 {
@@ -6,4 +12,13 @@ content-type: application/json
 }
 
 ###
-DELETE http://localhost:3002/api/notes/4
+DELETE http://localhost:3004/api/notes/685c46d9e1a6235abbcd7dea
+
+###
+PUT http://localhost:3004/api/notes/685c4643e1a6235abbcd7ddf
+content-type: application/json
+
+{
+    "content": "J'ai mis à jour la note test",
+    "important": "true"
+}
