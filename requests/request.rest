@@ -1,14 +1,15 @@
 GET http://localhost:3004/api/notes
 
 ###
-GET http://localhost:3004/api/notes/685c4695e1a6235abbcd7de3
+GET http://localhost:3004/api/notes/6867f3004f3681031771f62c
 
 ###
 POST http://localhost:3004/api/notes
 content-type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Im1sdXVra2FpIiwiaWQiOiI2ODYzYTViMmVlYmRhMzVhODYzZGM5NTAiLCJpYXQiOjE3NTE0NDcyNzd9.lhqArPYomAH3gpYOnbbWxaFQVkQcAwR4RPF6ydiIvUg
 
 {
-    "content": "Nouvelle Note faites avec request.rest"
+    "content": "Encore une nouvelle Note faites avec request.rest"
 }
 
 ###
@@ -16,8 +17,9 @@ POST http://localhost:3004/api/notes
 content-type: application/json
 
 {
-    "content": "lol",
-    "important": true
+    "content": "J'ajoute encore une nouvelle note pour voir",
+    "important": true,
+    "userId": "6863a588eebda35a863dc94c"
 }
 
 ###
@@ -30,4 +32,26 @@ content-type: application/json
 {
     "content": "J'ai mis à jour la note test",
     "important": "true"
+}
+
+###
+POST http://localhost:3004/api/users/
+content-type: application/json
+
+{
+    "username": "Pololo",
+    "name": "Paul GT",
+    "password": "password"
+}
+
+###
+GET http://localhost:3004/api/users/
+
+###
+POST http://localhost:3004/api/login/
+content-type: application/json
+
+{
+    "username": "mluukkai",
+    "password": "password"
 }
